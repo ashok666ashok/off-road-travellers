@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 60px;
+}
+.collapse ul li {
+  display: inline-block;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+.collapse ul li a {
+  font-weight: bolder;
+}
+.collapse ul li a:hover {
+  background-color: rgb(181, 25, 51);
+  color: white;
+}
+.fa-brands {
+  margin: 2px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.backgroundbanner {
+  background: url(./medias/africa-4688049_1920.jpg);
+  width: 100%;
+  height: 700px;
+}
+.bannertitle {
+  position: relative;
+  top: 150px;
+
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  transition: all 0.9s;
+  font-family: acme, sans-serif;
+  background: (black) 50%, (white) 50%;
+  color: whitesmoke;
+
+  background-position: 50% 100%;
+}
+.bannerpara {
+  display: inline;
+  text-align: center;
+  left: 400px;
+}
+.ourtop {
+  position: absolute;
+  top: 700px;
+  left: 7%;
+  height: auto;
+  box-shadow: 2px 2px 20px black;
+  background-color: white;
+}
+.ourtop img {
+  position: relative;
+  top: -15px;
+  right: 20px;
+  width: 2000px;
+}
+.ourtop span {
+  color: rgb(181, 25, 51);
+  margin-right: 2px;
+}
+.ourtop h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.imgcontent {
+  height: 250px;
+}
+.imgcontent img {
+  width: 400px;
+
+  height: 250px;
+}
+.imgcontent h2,
+p {
+  position: relative;
+  top: -250px;
+  text-align: justify;
+  width: 350px;
+  z-index: 1;
+  color: transparent;
+  font-weight: bold;
+}
+.imgcontent:hover {
+  img {
+    image-resolution: inherit;
+    filter: blur(2px);
+    box-shadow: 3px 4px 10px black;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  .cont {
+    color: black;
+
+    transition: all 0.5s ease-in;
+  }
+  .conth2 {
+    text-shadow: 2px 3px 5px white, 2px 3px 5px rgb(181, 25, 51);
+  }
+}
+
+.veiwmorebtn {
+  top: 0px;
+  left: 45%;
+  text-align: center;
+  background-color: rgb(181, 25, 51);
+  width: 150px;
+  height: 30px;
+}
+.veiwmorebtn a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+}
+.veiwmorebtn:hover {
+  a {
+    color: black;
+    transition: all 0.3s;
+  }
+}
+.belcust {
+  color: rgba(0, 0, 0, 0.501);
+  top: -50px;
+  left: 30%;
+  font-weight: lighter;
+  font-size: 30px;
+  display: inline;
+}
+#header1 {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.whychoose {
+  position: relative;
+  top: 1500px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+.whyh1 {
+  text-align: center;
+}
+.whyh1 span {
+  color: rgb(181, 25, 51);
+}
+.star {
+  top: 0px;
+  color: black;
+  font-size: 50px;
+  font-weight: lighter;
+  left: 200px;
+  border: 2px solid green;
+  width: 80px;
+
+  border-radius: 50%;
+  text-align: center;
+}
+.iconhead {
+  text-align: center;
+}
+.iconpara {
+  text-align: center;
+  color: black;
+  text-align: justify;
+  top: 0px;
+  left: 80px;
+  font-weight: lighter;
+}
+.clientsay {
+  position: relative;
+  top: 1500px;
+}
+.clientsay h1 {
+  text-align: center;
+  position: relative;
+  top: -800px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.fp {
+  color: black;
+  position: relative;
+  left: 110px;
+  top: -55px;
+  font-weight: 600;
+}
+.fp1p {
+  color: black;
+  left: 250px;
+  top: -150px;
+  border-left: 2px white solid;
+  padding: 20px;
+  width: 500px;
+  font-weight: 300;
+}
+
+.feedback1 img {
+  border-radius: 50%;
+}
+/* slider */
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 1px auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 7;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.5);
+}
+.feedback1 {
+  flex: 1 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: relative;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  transition: opacity ease 250ms;
+}
+.aboutus {
+  position: relative;
+  top: 800px;
+  overflow-y: hidden;
+}
+.slider-nav a:hover {
+  border: 2px white solid;
+}
+.slider-nav a:active {
+  border: 2px solid rgb(181, 25, 51);
+}
+footer{
+  position: relative;
+  top: 900px;
+  background-image: url(./medias/footer.jpg);
+}
+
+/* footer */
+.p1{
+  top: 0px;
+  
+  color: white;
+}
+.p1 a{
+  text-decoration: none;
+  font-weight: lighter;
+}
+.ul{
+  top: 0;
+  left: 10px;
+  color: white;
+
+}
+.ul a{
+  text-decoration: none;
+  font-weight: lighter;
+}
+.contact{
+  top: 0;
+  left: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.contact:hover{
+color:rgb(181, 25, 51) ;
+}
+.p1:hover{
+  color: rgb(181, 25, 51);
+}
+.ul:hover{
+  color: rgb(181, 25, 51);
+}
+
+.md{
+  text-decoration: none;
+}
+.news{
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.em{
+  width: 250px;
+  height: 20px;
+  font-size: small;
+  
+}
+.subsc{
+  top: 20px;
+  font-weight: lighter;
+  
+}
+.subsc a{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(181, 25, 51);
+  padding: 5px;
+}
+.subsc:hover{
+  a{
+    color: black;
+  }
+}
